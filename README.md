@@ -14,7 +14,7 @@ This project allows users to create, edit and delete articles. We make use of va
 
 ## Tech Stack
 
-The project is created with Express, MongoDB, Node and Bootstrap. Libraries including dompurify was also used to sanitize the HTML and prevcent XSS attacks.
+The project is created with Express, MongoDB, Node and Bootstrap. Libraries including EJS and dompurify was also used to sanitize the HTML and prevcent XSS attacks.
 
 
 ## Running this on a local machine

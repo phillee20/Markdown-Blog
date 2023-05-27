@@ -10,6 +10,7 @@ mongoose.connect("mongodb://localhost/blog", {
   useUnifiedTopology: true,
 });
 
+
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false })); //We can access all paramter from article form inside article route by using request.body
 app.use(methodOverride("_method"));

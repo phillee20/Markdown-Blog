@@ -28,7 +28,7 @@ const articleSchema = new mongoose.Schema({
   },
   sanitizedHTML: {
     type: String,
-    required: true,
+    require: true,
   },
 });
 
@@ -38,11 +38,12 @@ articleSchema.pre("validate", function (next) {
     this.slug = slugify(this.title, { lower: true, strict: true });
   }
 
-  //converts markdown to HTML and purifies the HTML to take out malicious code
   if (this.markdown) {
-    this.sanitizedHTML = dompurify.sanitize(marked.parse(this.markdown));
+    this.sanitizedHTML = dompurify.sanitized(marked.parse(this.markdown));
   }
   next();
 });
+
+//converts markdown to HTML and purifies the HTML to take out malicious code
 
 module.exports = mongoose.model("Article", articleSchema);

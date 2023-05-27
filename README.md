@@ -1,21 +1,18 @@
 # Markdown Blog
 
-This project allows users to create, edit and delete articles. We make use of various symbols, such as hash symbols (#) and asterisk (*) to create the articles. 
+This project allows users to create, edit and delete articles. We make use of various symbols, such as hash symbols (#) and asterisk (\*) to create the articles.
 
 \\ backslash itself.
-\` backtick.
-\* asterisk.
+\` backtick. \* asterisk.
 \_ underscore.
 \{ \} curly braces.
 \[ \] square brackets.
 \( \) parentheses.
 \# hash mark.
 
-
 ## Tech Stack
 
-The project is created with Express, MongoDB, Node and Bootstrap. Libraries including EJS and dompurify was also used to sanitize the HTML and prevcent XSS attacks.
-
+The project is created with Express, MongoDB, Node and Bootstrap. Libraries including EJS and dompurify was also used to sanitize the HTML and prevent XSS attacks.
 
 ## Running this on a local machine
 
@@ -28,4 +25,3 @@ git clone https://github.com/YOUROWNGITHUBUSERNAME/MarkdownBlog
 Now, run `npm run devStart` and it will run the server. Go to your browser and type in http://localhost:4000 ,this will display the website.
 <br>
 <br>
-
